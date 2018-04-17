@@ -2,8 +2,8 @@
     //console.log("dpr:"+win.devicePixelRatio); 
     var docEle = doc.documentElement,  //获取文档对象
     isIos = navigator.userAgent.match(/iphone|ipod|ipad/gi),
-    dpr=Math.min(win.devicePixelRatio, 3);
-    var scale = 1 / dpr,
+    dpr=Math.min(win.devicePixelRatio, 3),
+    scale = 1 / dpr,
 
     resizeEvent = 'orientationchange' in window ? 'orientationchange' : 'resize';
     docEle.dataset.dpr = dpr;  //设置html data-dpr
